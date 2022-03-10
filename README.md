@@ -1,2 +1,2 @@
-# annotation_tool
-Our custom video annotation tool
+# Annotation Tool v2.0
+Check the Guide for more details.
