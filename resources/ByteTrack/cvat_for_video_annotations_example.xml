@@ -1,0 +1,3237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>207</id>
+      <name>joao_brito_96_0</name>
+      <size>150</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2022-03-01 17:16:13.546392+00:00</created>
+      <updated>2022-03-03 15:52:40.266967+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>149</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>207</id>
+          <start>0</start>
+          <stop>149</stop>
+          <url>http://localhost:8080/?id=207</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>Brito</username>
+        <email>jpedrocb98@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>fire</name>
+          <color>#f59331</color>
+          <attributes>
+            <attribute>
+              <name>id</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>-1</default_value>
+              <values>-1</values>
+            </attribute>
+            <attribute>
+              <name>fire_or_explosion</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ea4335</color>
+          <attributes>
+            <attribute>
+              <name>id</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>-1</default_value>
+              <values>-1</values>
+            </attribute>
+            <attribute>
+              <name>abandoned_object</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>true</default_value>
+              <values>true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>car</name>
+          <color>#34a853</color>
+          <attributes>
+            <attribute>
+              <name>id</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value>-1</default_value>
+              <values>-1</values>
+            </attribute>
+            <attribute>
+              <name>road_accident</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>moving</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>true</default_value>
+              <values>true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>human</name>
+          <color>#3c78d8</color>
+          <attributes>
+            <attribute>
+              <name>id</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>-1</default_value>
+              <values>-1</values>
+            </attribute>
+            <attribute>
+              <name>carrying_weapon</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>walking</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>vandalizing</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>throwing</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>stealing</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>standing</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>shooting</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>running</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>riding</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>jumping</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>fighting</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>falling</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>climbing</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>fire_raising</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>lying</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>sitting_down</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>standing_up</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2022-03-04 11:38:16.884928+00:00</dumped>
+  </meta>
+  <track id="0" label="human" source="manual">
+    <box frame="0" outside="0" occluded="0" keyframe="1" xtl="89.89" ytl="102.95" xbr="250.02" ybr="338.55" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="1" outside="0" occluded="0" keyframe="0" xtl="89.38" ytl="102.95" xbr="254.09" ybr="338.55" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="2" outside="0" occluded="0" keyframe="0" xtl="88.87" ytl="102.95" xbr="258.16" ybr="338.55" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="3" outside="0" occluded="0" keyframe="0" xtl="88.36" ytl="102.95" xbr="262.23" ybr="338.55" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="4" outside="0" occluded="0" keyframe="1" xtl="87.85" ytl="102.95" xbr="266.30" ybr="338.55" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="5" outside="0" occluded="0" keyframe="0" xtl="82.41" ytl="105.67" xbr="265.27" ybr="336.83" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="6" outside="0" occluded="0" keyframe="0" xtl="76.97" ytl="108.38" xbr="264.23" ybr="335.12" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="7" outside="0" occluded="0" keyframe="1" xtl="71.53" ytl="111.10" xbr="263.20" ybr="333.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="8" outside="0" occluded="0" keyframe="0" xtl="71.53" ytl="111.10" xbr="260.65" ybr="333.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="9" outside="0" occluded="0" keyframe="1" xtl="71.53" ytl="111.10" xbr="258.10" ybr="333.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="10" outside="0" occluded="0" keyframe="1" xtl="75.27" ytl="111.44" xbr="256.07" ybr="333.74" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="11" outside="0" occluded="0" keyframe="1" xtl="82.58" ytl="111.78" xbr="257.62" ybr="334.08" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="12" outside="0" occluded="0" keyframe="1" xtl="91.93" ytl="112.12" xbr="261.20" ybr="334.42" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="13" outside="0" occluded="0" keyframe="0" xtl="102.13" ytl="112.12" xbr="264.25" ybr="332.91" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="14" outside="0" occluded="0" keyframe="1" xtl="112.33" ytl="112.12" xbr="267.30" ybr="331.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="15" outside="0" occluded="0" keyframe="0" xtl="114.37" ytl="112.12" xbr="267.97" ybr="331.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="16" outside="0" occluded="0" keyframe="0" xtl="116.41" ytl="112.12" xbr="268.63" ybr="331.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="17" outside="0" occluded="0" keyframe="1" xtl="118.45" ytl="112.12" xbr="269.30" ybr="331.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="18" outside="0" occluded="0" keyframe="0" xtl="116.41" ytl="115.18" xbr="269.80" ybr="331.90" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="19" outside="0" occluded="0" keyframe="1" xtl="114.37" ytl="118.24" xbr="270.30" ybr="332.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="20" outside="0" occluded="0" keyframe="1" xtl="113.15" ytl="121.72" xbr="265.80" ybr="333.60" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="21" outside="0" occluded="0" keyframe="1" xtl="111.92" ytl="120.09" xbr="265.15" ybr="333.56" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="22" outside="0" occluded="0" keyframe="1" xtl="116.48" ytl="118.46" xbr="266.18" ybr="333.51" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="23" outside="0" occluded="0" keyframe="0" xtl="122.56" ytl="116.83" xbr="274.89" ybr="333.47" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="24" outside="0" occluded="0" keyframe="1" xtl="128.65" ytl="115.20" xbr="283.60" ybr="333.42" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="25" outside="0" occluded="0" keyframe="1" xtl="134.77" ytl="113.16" xbr="296.90" ybr="331.38" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="26" outside="0" occluded="0" keyframe="0" xtl="140.38" ytl="108.57" xbr="302.51" ybr="331.39" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="27" outside="0" occluded="0" keyframe="1" xtl="145.99" ytl="103.98" xbr="308.12" ybr="331.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="28" outside="0" occluded="0" keyframe="1" xtl="148.03" ytl="102.28" xbr="323.40" ybr="333.10" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="29" outside="0" occluded="0" keyframe="0" xtl="150.07" ytl="100.58" xbr="328.00" ybr="334.80" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="30" outside="0" occluded="0" keyframe="1" xtl="152.11" ytl="98.88" xbr="332.60" ybr="336.50" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="31" outside="0" occluded="0" keyframe="0" xtl="155.51" ytl="101.26" xbr="331.57" ybr="335.13" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="32" outside="0" occluded="0" keyframe="0" xtl="158.90" ytl="103.64" xbr="330.53" ybr="333.77" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="33" outside="0" occluded="0" keyframe="1" xtl="162.30" ytl="106.02" xbr="329.50" ybr="332.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="34" outside="0" occluded="0" keyframe="0" xtl="164.34" ytl="107.55" xbr="328.50" ybr="333.93" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="35" outside="0" occluded="0" keyframe="1" xtl="166.38" ytl="109.08" xbr="327.50" ybr="335.46" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="36" outside="0" occluded="0" keyframe="0" xtl="167.15" ytl="104.74" xbr="328.00" ybr="335.46" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="37" outside="0" occluded="0" keyframe="1" xtl="167.91" ytl="100.39" xbr="328.50" ybr="335.46" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="38" outside="0" occluded="0" keyframe="0" xtl="168.68" ytl="96.05" xbr="334.10" ybr="335.46" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="39" outside="0" occluded="0" keyframe="1" xtl="169.44" ytl="91.70" xbr="339.70" ybr="335.46" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="40" outside="0" occluded="0" keyframe="1" xtl="172.50" ytl="89.10" xbr="352.50" ybr="339.54" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="41" outside="0" occluded="0" keyframe="1" xtl="175.56" ytl="78.40" xbr="353.00" ybr="343.62" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="42" outside="0" occluded="0" keyframe="0" xtl="175.56" ytl="74.85" xbr="353.50" ybr="343.62" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="43" outside="0" occluded="0" keyframe="1" xtl="175.56" ytl="71.30" xbr="354.00" ybr="343.62" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="44" outside="0" occluded="0" keyframe="0" xtl="179.13" ytl="70.80" xbr="357.05" ybr="346.17" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="45" outside="0" occluded="0" keyframe="1" xtl="182.70" ytl="70.30" xbr="360.10" ybr="348.72" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="46" outside="0" occluded="0" keyframe="0" xtl="196.63" ytl="71.58" xbr="362.23" ybr="349.48" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="47" outside="0" occluded="0" keyframe="0" xtl="210.57" ytl="72.85" xbr="364.37" ybr="350.25" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="48" outside="0" occluded="0" keyframe="1" xtl="224.50" ytl="74.12" xbr="366.50" ybr="351.01" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="49" outside="0" occluded="0" keyframe="1" xtl="229.60" ytl="75.40" xbr="375.40" ybr="351.78" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="50" outside="0" occluded="0" keyframe="1" xtl="229.60" ytl="73.40" xbr="383.60" ybr="351.78" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="51" outside="0" occluded="0" keyframe="0" xtl="225.86" ytl="71.03" xbr="389.37" ybr="353.82" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="52" outside="0" occluded="0" keyframe="0" xtl="222.12" ytl="68.67" xbr="395.13" ybr="355.86" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="53" outside="0" occluded="0" keyframe="1" xtl="218.38" ytl="66.30" xbr="400.90" ybr="357.90" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="54" outside="0" occluded="0" keyframe="1" xtl="232.66" ytl="59.20" xbr="408.00" ybr="358.92" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="55" outside="0" occluded="0" keyframe="0" xtl="252.04" ytl="53.60" xbr="416.65" ybr="353.82" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="56" outside="0" occluded="0" keyframe="1" xtl="271.42" ytl="48.00" xbr="425.30" ybr="348.72" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="57" outside="0" occluded="0" keyframe="1" xtl="296.90" ytl="44.94" xbr="436.00" ybr="344.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="58" outside="0" occluded="0" keyframe="1" xtl="334.65" ytl="41.88" xbr="446.70" ybr="199.80" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="59" outside="0" occluded="0" keyframe="1" xtl="343.83" ytl="41.88" xbr="455.88" ybr="199.80" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="60" outside="0" occluded="0" keyframe="0" xtl="349.95" ytl="41.88" xbr="462.49" ybr="197.75" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="61" outside="0" occluded="0" keyframe="1" xtl="356.07" ytl="41.88" xbr="469.10" ybr="195.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="62" outside="0" occluded="0" keyframe="0" xtl="361.17" ytl="45.96" xbr="474.20" ybr="193.33" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="63" outside="0" occluded="0" keyframe="0" xtl="366.27" ytl="50.04" xbr="479.30" ybr="190.97" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="64" outside="0" occluded="0" keyframe="1" xtl="371.37" ytl="54.12" xbr="484.40" ybr="188.60" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="65" outside="0" occluded="0" keyframe="0" xtl="375.96" ytl="57.18" xbr="490.50" ybr="185.55" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="66" outside="0" occluded="0" keyframe="1" xtl="380.55" ytl="60.24" xbr="496.60" ybr="182.50" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="67" outside="0" occluded="0" keyframe="0" xtl="380.04" ytl="52.59" xbr="499.65" ybr="180.95" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="68" outside="0" occluded="0" keyframe="1" xtl="379.53" ytl="44.94" xbr="502.70" ybr="179.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="69" outside="0" occluded="0" keyframe="0" xtl="379.53" ytl="38.82" xbr="507.30" ybr="178.90" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="70" outside="0" occluded="0" keyframe="1" xtl="379.53" ytl="32.70" xbr="511.90" ybr="178.40" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="71" outside="0" occluded="0" keyframe="0" xtl="381.06" ytl="28.62" xbr="521.60" ybr="175.35" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="72" outside="0" occluded="0" keyframe="1" xtl="382.59" ytl="24.54" xbr="531.30" ybr="172.30" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="73" outside="0" occluded="0" keyframe="0" xtl="381.06" ytl="26.07" xbr="537.44" ybr="172.31" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="74" outside="0" occluded="0" keyframe="1" xtl="379.53" ytl="27.60" xbr="543.58" ybr="172.32" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="75" outside="0" occluded="0" keyframe="0" xtl="379.53" ytl="31.17" xbr="546.14" ybr="171.31" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="76" outside="0" occluded="0" keyframe="1" xtl="379.53" ytl="34.74" xbr="548.70" ybr="170.30" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="77" outside="0" occluded="0" keyframe="0" xtl="384.12" ytl="37.80" xbr="549.20" ybr="169.30" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="78" outside="0" occluded="0" keyframe="1" xtl="388.71" ytl="40.86" xbr="549.70" ybr="168.30" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="79" outside="0" occluded="0" keyframe="0" xtl="391.09" ytl="40.86" xbr="554.13" ybr="167.97" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="80" outside="0" occluded="0" keyframe="0" xtl="393.47" ytl="40.86" xbr="558.57" ybr="167.63" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="81" outside="0" occluded="0" keyframe="1" xtl="395.85" ytl="40.86" xbr="563.00" ybr="167.30" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="82" outside="0" occluded="0" keyframe="0" xtl="397.55" ytl="40.18" xbr="568.77" ybr="166.62" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="83" outside="0" occluded="0" keyframe="0" xtl="399.25" ytl="39.50" xbr="574.53" ybr="165.94" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="84" outside="0" occluded="0" keyframe="1" xtl="400.95" ytl="38.82" xbr="580.30" ybr="165.26" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="85" outside="0" occluded="0" keyframe="0" xtl="401.63" ytl="39.16" xbr="584.37" ybr="164.57" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="86" outside="0" occluded="0" keyframe="0" xtl="402.31" ytl="39.50" xbr="588.43" ybr="163.89" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="87" outside="0" occluded="0" keyframe="1" xtl="402.99" ytl="39.84" xbr="592.50" ybr="163.20" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="88" outside="0" occluded="0" keyframe="0" xtl="408.77" ytl="39.16" xbr="596.57" ybr="162.52" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="89" outside="0" occluded="0" keyframe="0" xtl="414.55" ytl="38.48" xbr="600.63" ybr="161.84" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="90" outside="0" occluded="0" keyframe="1" xtl="420.33" ytl="37.80" xbr="604.70" ybr="161.16" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="91" outside="0" occluded="0" keyframe="0" xtl="422.88" ytl="36.78" xbr="608.28" ybr="159.62" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="92" outside="0" occluded="0" keyframe="0" xtl="425.42" ytl="35.76" xbr="611.85" ybr="158.08" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="93" outside="0" occluded="0" keyframe="0" xtl="427.97" ytl="34.74" xbr="615.43" ybr="156.54" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="94" outside="0" occluded="0" keyframe="1" xtl="430.52" ytl="33.72" xbr="619.00" ybr="155.00" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="95" outside="0" occluded="0" keyframe="0" xtl="433.24" ytl="35.42" xbr="609.47" ybr="153.63" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="96" outside="0" occluded="0" keyframe="0" xtl="435.96" ytl="37.12" xbr="599.93" ybr="152.27" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="97" outside="0" occluded="0" keyframe="1" xtl="438.68" ytl="38.82" xbr="590.40" ybr="150.90" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="98" outside="0" occluded="0" keyframe="0" xtl="441.49" ytl="36.78" xbr="593.20" ybr="148.86" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="99" outside="0" occluded="0" keyframe="0" xtl="444.29" ytl="34.74" xbr="596.01" ybr="146.82" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="100" outside="0" occluded="0" keyframe="0" xtl="447.10" ytl="32.70" xbr="598.81" ybr="144.78" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="101" outside="0" occluded="0" keyframe="1" xtl="449.90" ytl="30.66" xbr="601.62" ybr="142.74" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="102" outside="0" occluded="0" keyframe="0" xtl="452.76" ytl="32.09" xbr="604.48" ybr="144.17" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="103" outside="0" occluded="0" keyframe="0" xtl="455.62" ytl="33.52" xbr="607.33" ybr="145.60" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="104" outside="0" occluded="0" keyframe="0" xtl="458.47" ytl="34.94" xbr="610.19" ybr="147.02" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="105" outside="0" occluded="0" keyframe="0" xtl="461.33" ytl="36.37" xbr="613.04" ybr="148.45" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="106" outside="0" occluded="0" keyframe="1" xtl="464.18" ytl="37.80" xbr="615.90" ybr="149.88" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="107" outside="0" occluded="0" keyframe="0" xtl="465.99" ytl="37.86" xbr="617.81" ybr="149.24" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="108" outside="0" occluded="0" keyframe="0" xtl="467.80" ytl="37.93" xbr="619.72" ybr="148.61" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="109" outside="0" occluded="0" keyframe="0" xtl="469.61" ytl="37.99" xbr="621.64" ybr="147.97" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="110" outside="0" occluded="0" keyframe="0" xtl="471.43" ytl="38.06" xbr="623.55" ybr="147.34" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="111" outside="0" occluded="0" keyframe="0" xtl="473.24" ytl="38.12" xbr="625.46" ybr="146.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="112" outside="0" occluded="0" keyframe="0" xtl="475.05" ytl="38.18" xbr="627.37" ybr="146.06" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="113" outside="0" occluded="0" keyframe="0" xtl="476.86" ytl="38.25" xbr="629.29" ybr="145.43" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="114" outside="0" occluded="0" keyframe="0" xtl="478.67" ytl="38.31" xbr="631.20" ybr="144.79" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="115" outside="0" occluded="0" keyframe="0" xtl="480.48" ytl="38.37" xbr="633.11" ybr="144.15" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="116" outside="0" occluded="0" keyframe="0" xtl="482.29" ytl="38.44" xbr="635.02" ybr="143.52" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="117" outside="0" occluded="0" keyframe="1" xtl="484.10" ytl="38.50" xbr="636.94" ybr="142.88" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="118" outside="0" occluded="0" keyframe="0" xtl="485.01" ytl="38.57" xbr="638.85" ybr="142.25" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="119" outside="0" occluded="0" keyframe="0" xtl="485.92" ytl="38.63" xbr="640.76" ybr="141.61" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="120" outside="0" occluded="0" keyframe="0" xtl="486.84" ytl="38.69" xbr="642.67" ybr="140.97" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="121" outside="0" occluded="0" keyframe="0" xtl="487.75" ytl="38.76" xbr="644.59" ybr="140.34" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="122" outside="0" occluded="0" keyframe="1" xtl="488.66" ytl="38.82" xbr="646.50" ybr="139.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="123" outside="0" occluded="0" keyframe="1" xtl="492.40" ytl="38.60" xbr="645.33" ybr="139.84" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="124" outside="0" occluded="0" keyframe="0" xtl="490.09" ytl="38.38" xbr="644.17" ybr="139.99" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="125" outside="0" occluded="0" keyframe="1" xtl="487.79" ytl="38.17" xbr="643.00" ybr="140.13" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="126" outside="0" occluded="0" keyframe="0" xtl="487.22" ytl="37.95" xbr="641.56" ybr="140.27" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="127" outside="0" occluded="0" keyframe="1" xtl="486.65" ytl="37.73" xbr="640.11" ybr="140.41" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="128" outside="0" occluded="0" keyframe="0" xtl="484.83" ytl="37.51" xbr="637.42" ybr="140.56" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="129" outside="0" occluded="0" keyframe="0" xtl="483.02" ytl="37.29" xbr="634.73" ybr="140.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="130" outside="0" occluded="0" keyframe="0" xtl="481.20" ytl="37.07" xbr="632.04" ybr="140.84" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="131" outside="0" occluded="0" keyframe="0" xtl="479.38" ytl="36.85" xbr="629.35" ybr="140.99" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="132" outside="0" occluded="0" keyframe="0" xtl="477.57" ytl="36.63" xbr="626.66" ybr="141.13" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="133" outside="0" occluded="0" keyframe="0" xtl="475.75" ytl="36.42" xbr="623.97" ybr="141.27" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="134" outside="0" occluded="0" keyframe="0" xtl="473.93" ytl="36.20" xbr="621.28" ybr="141.41" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="135" outside="0" occluded="0" keyframe="0" xtl="472.12" ytl="35.98" xbr="618.59" ybr="141.56" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="136" outside="0" occluded="0" keyframe="1" xtl="470.30" ytl="35.76" xbr="615.90" ybr="141.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="137" outside="0" occluded="0" keyframe="0" xtl="467.92" ytl="35.76" xbr="615.57" ybr="141.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="138" outside="0" occluded="0" keyframe="0" xtl="465.54" ytl="35.76" xbr="615.23" ybr="141.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="139" outside="0" occluded="0" keyframe="1" xtl="463.16" ytl="35.76" xbr="614.90" ybr="141.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="140" outside="0" occluded="0" keyframe="0" xtl="460.71" ytl="35.76" xbr="616.54" ybr="141.90" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="141" outside="0" occluded="0" keyframe="0" xtl="458.27" ytl="35.76" xbr="618.18" ybr="142.10" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="142" outside="0" occluded="0" keyframe="0" xtl="455.82" ytl="35.76" xbr="619.82" ybr="142.30" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="143" outside="0" occluded="0" keyframe="0" xtl="453.37" ytl="35.76" xbr="621.46" ybr="142.50" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="144" outside="0" occluded="0" keyframe="1" xtl="450.92" ytl="35.76" xbr="623.10" ybr="142.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="145" outside="0" occluded="0" keyframe="0" xtl="450.92" ytl="35.76" xbr="623.10" ybr="142.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="146" outside="0" occluded="0" keyframe="0" xtl="450.92" ytl="35.76" xbr="623.10" ybr="142.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="147" outside="0" occluded="0" keyframe="0" xtl="450.92" ytl="35.76" xbr="623.10" ybr="142.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="148" outside="0" occluded="0" keyframe="0" xtl="450.92" ytl="35.76" xbr="623.10" ybr="142.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+    <box frame="149" outside="0" occluded="0" keyframe="0" xtl="450.92" ytl="35.76" xbr="623.10" ybr="142.70" z_order="0">
+      <attribute name="carrying_weapon">false</attribute>
+      <attribute name="walking">false</attribute>
+      <attribute name="vandalizing">false</attribute>
+      <attribute name="throwing">false</attribute>
+      <attribute name="stealing">false</attribute>
+      <attribute name="standing">false</attribute>
+      <attribute name="shooting">false</attribute>
+      <attribute name="running">false</attribute>
+      <attribute name="riding">false</attribute>
+      <attribute name="jumping">false</attribute>
+      <attribute name="fighting">false</attribute>
+      <attribute name="falling">false</attribute>
+      <attribute name="climbing">false</attribute>
+      <attribute name="fire_raising">false</attribute>
+      <attribute name="lying">false</attribute>
+      <attribute name="sitting_down">false</attribute>
+      <attribute name="standing_up">false</attribute>
+      <attribute name="id">1</attribute>
+    </box>
+  </track>
+</annotations>

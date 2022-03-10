@@ -1,0 +1,17 @@
+        <attribute name="carrying_weapon">false</attribute>
+        <attribute name="walking">false</attribute>
+        <attribute name="vandalizing">false</attribute>
+        <attribute name="throwing">false</attribute>
+        <attribute name="stealing">false</attribute>
+        <attribute name="standing">false</attribute>
+        <attribute name="shooting">false</attribute>
+        <attribute name="running">false</attribute>
+        <attribute name="riding">false</attribute>
+        <attribute name="jumping">false</attribute>
+        <attribute name="fighting">false</attribute>
+        <attribute name="falling">false</attribute>
+        <attribute name="climbing">false</attribute>
+        <attribute name="fire_raising">false</attribute>
+        <attribute name="lying">false</attribute>
+        <attribute name="sitting_down">false</attribute>
+        <attribute name="standing_up">false</attribute>
