@@ -18,20 +18,19 @@ from typing import Iterable, Tuple
 from resources.ByteTrack import tools
 from pickle import dump, HIGHEST_PROTOCOL
 from resources.utils_action_tracking import *
-from shutil import rmtree, make_archive, move
+from shutil import rmtree, make_archive, move, unpack_archive
 
 
-###########################################################################
+##############################################
 # CONTROL VARIABLES
-###########################################################################
+##############################################
 DEMO_TYPE = "video"
-CFG_FILE_PATH = "resources/ByteTrack/exps/example/mot/yolox_x_mix_det.py"
-TRAINED_MODEL_PATH = "resources/ByteTrack/pretrained/bytetrack_x_mot20.tar"
 SAVE_FRAMES = False
 SAVE_VIDEO = True
 HSVTUPLE = Tuple[Fraction, Fraction, Fraction]
 RGBTUPLE = Tuple[float, float, float]
 LOGGER = None
+NO_ATTS = ["keyframe", "occluded", "track_id"]
 CLASSES = [
     ["walking", "SI", "N"],
     ["running", "SI", "N"],
@@ -142,14 +141,19 @@ def initial_setup(): # auxiliary function, sets up the annotation process
             rmtree("output/" + item)
 
 
-def get_tracked_bounding_boxes(video_path): # auxiliary function, retrieves a collection of tracked bounding boxes for the target video
+def get_tracked_bounding_boxes(video_path, cfg_file_path, trained_model_path): # auxiliary function, retrieves a collection of tracked bounding boxes for the target video
+
+    global LOGGER
+    
+    if(LOGGER is None):
+        LOGGER = Logger()
 
     LOGGER.log(message = "Computing tracked bounding boxes")
 
     args = {
         "demo": DEMO_TYPE,
-        "exp_file": CFG_FILE_PATH,
-        "ckpt": TRAINED_MODEL_PATH,
+        "exp_file": cfg_file_path,
+        "ckpt": trained_model_path,
         "path": video_path,
         "expn": None,
         "name": None,
@@ -179,6 +183,11 @@ def get_tracked_bounding_boxes(video_path): # auxiliary function, retrieves a co
 def fix_tracking(remove_list, remap_list): # auxiliary function, fixes any possible error that may have been made regarding the tracking step
 
     if(remove_list == [] and remap_list == []): return
+
+    global LOGGER
+    
+    if(LOGGER is None):
+        LOGGER = Logger()
 
     LOGGER.log(message = "Fixing tracking errors")
 
@@ -297,6 +306,11 @@ def fix_tracking(remove_list, remap_list): # auxiliary function, fixes any possi
 
 def annotate_actions(video_path, actions_list): # auxiliary function, annotates the actions that each person is doing
 
+    global LOGGER
+    
+    if(LOGGER is None):
+        LOGGER = Logger()
+
     if(actions_list == []): LOGGER.show_error(message = "Please add action annotations!")
 
     LOGGER.log(message = "Annotating actions")
@@ -307,7 +321,7 @@ def annotate_actions(video_path, actions_list): # auxiliary function, annotates 
             if((action_annotation[0] == object_id) and (frame_number >= action_annotation[1]) and (frame_number <= action_annotation[2])):
                 return(action_annotation[3] + "_" + str(object_id))
         
-        LOGGER.show_error(message = "Error! (One of the action annotations is invalid)")
+        return(None)
 
     #################################################################################################################
     # PERFORM AN INITIAL SETUP
@@ -323,30 +337,84 @@ def annotate_actions(video_path, actions_list): # auxiliary function, annotates 
 
     annotations_dict[video_path.split("/")[-1]] = [{}, width, height, total_frames, fps, "-"]
 
-    with ZipFile("output/cvat_task.zip", "r") as file:
-        file.extractall("output/cvat_task")
-
-    with open("output/cvat_task/annotations.json", "r") as file:
-        json_data = json.load(file)
-
     for action_annotation_idx in range(len(actions_list)):
         if(actions_list[action_annotation_idx][2] == -1): # replace the "-1" with the actual number of the last frame
             num_frames = len(list(filter(lambda x : x[0] != ".", os.listdir("output/images"))))
             actions_list[action_annotation_idx][2] = num_frames
 
-    #############################################################################################################################################################
-    # MERGE THE TRACKING INFORMATION WITH THE ACTION ANNOTATIONS
-    #############################################################################################################################################################
-    for track in json_data[0]["tracks"]:
-        for shape in track["shapes"]:
-            frame_number = shape["frame"] + 1
-            bbox = [int(shape["points"][0]), int(shape["points"][1]), int(shape["points"][2] - shape["points"][0]), int(shape["points"][3] - shape["points"][1])]
-            class_instance = get_class_instance(frame_number = frame_number, object_id = track["attributes"][0]["value"], actions_list = actions_list)
+    # load the annotations in the CVAT task format
+    if(not os.path.exists("output/coco.zip")):
 
-            if(frame_number not in annotations_dict[video_path.split("/")[-1]][0].keys()):
-                annotations_dict[video_path.split("/")[-1]][0][frame_number] = {}
+        with ZipFile("output/cvat_task.zip", "r") as file:
+            file.extractall("output/cvat_task")
 
-            annotations_dict[video_path.split("/")[-1]][0][frame_number][class_instance] = bbox
+        with open("output/cvat_task/annotations.json", "r") as file:
+            json_data = json.load(file)
+
+        #############################################################################################################################################################
+        # MERGE THE TRACKING INFORMATION WITH THE ACTION ANNOTATIONS
+        #############################################################################################################################################################
+        for track in json_data[0]["tracks"]:
+            for shape in track["shapes"]:
+                frame_number = shape["frame"] + 1
+                bbox = [int(shape["points"][0]), int(shape["points"][1]), int(shape["points"][2] - shape["points"][0]), int(shape["points"][3] - shape["points"][1])]
+                class_instance = get_class_instance(frame_number = frame_number, object_id = track["attributes"][0]["value"], actions_list = actions_list)
+
+                if(class_instance is None): continue
+
+                if(frame_number not in annotations_dict[video_path.split("/")[-1]][0].keys()):
+                    annotations_dict[video_path.split("/")[-1]][0][frame_number] = {}
+
+                annotations_dict[video_path.split("/")[-1]][0][frame_number][class_instance] = bbox
+
+    # load the annotations in the COCO format
+    else:
+        coco_annotations_zip = "output/coco.zip"
+
+        # if necessary, unzip the annotations
+        if(not os.path.exists(coco_annotations_zip.split(".zip")[0])):
+            unpack_archive(coco_annotations_zip, coco_annotations_zip.split(".zip")[0])
+
+        with open(coco_annotations_zip.split(".zip")[0] + "/annotations/instances_default.json") as json_file:
+            data = json.load(json_file)
+
+        info_imgs   = data["images"]
+        info_labels = data["annotations"]
+
+        imgs = np.array([((obj["id"]), obj["file_name"]) for obj in info_imgs])
+
+        unique_ids = {}
+        unique_id_counter = 1
+        frame_number = -1
+
+        # ---------------------------------------------------------------------------------------------------------------------------
+        # actually save the action annotations
+        # ---------------------------------------------------------------------------------------------------------------------------
+        for label in info_labels:
+            
+            img_name  = imgs[np.where(imgs == str(label["image_id"]))[0][0]][1]
+
+            object_id_aux = ("1" if(label["attributes"]["id"] == "-1") else label["attributes"]["id"])
+            
+            if((str(label["category_id"]) + "_" + str(object_id_aux)) not in unique_ids.keys()):
+                unique_ids[str(label["category_id"]) + "_" + str(object_id_aux)] = unique_id_counter
+                object_id = unique_id_counter
+                unique_id_counter += 1
+            
+            else:
+                object_id = unique_ids[str(label["category_id"]) + "_" + str(object_id_aux)]
+
+            frame_number = int(img_name.replace("frame_", "").split(".")[0])
+
+            class_instance = get_class_instance(frame_number = frame_number, object_id = str(object_id), actions_list = actions_list)
+
+            if(class_instance is None): continue
+
+            if(frame_number not in annotations_dict[list(annotations_dict.keys())[0]][0].keys()):
+                annotations_dict[list(annotations_dict.keys())[0]][0][frame_number] = {}
+
+            bbox = label["bbox"]
+            annotations_dict[list(annotations_dict.keys())[0]][0][frame_number][class_instance] = bbox
 
     with open("output/" + video_path.split("/")[-1] + ".pkl", "wb") as file:
         dump(annotations_dict, file, HIGHEST_PROTOCOL)
@@ -354,6 +422,11 @@ def annotate_actions(video_path, actions_list): # auxiliary function, annotates 
 
 def extract_frames(video_path): # auxiliary function, extracts images from the target video
     
+    global LOGGER
+    
+    if(LOGGER is None):
+        LOGGER = Logger()
+
     LOGGER.log(message = "Extracting frames")
 
     os.makedirs("output/images", exist_ok = True)
@@ -377,6 +450,11 @@ def visualize_annotations(video_path): # auxiliary function, visualizes the fina
     ##########################################################################################
     # PERFORM AN INITIAL SETUP
     ##########################################################################################
+    global LOGGER
+    
+    if(LOGGER is None):
+        LOGGER = Logger()
+
     LOGGER.log(message = "Visualizing the final annotations")
 
     # load the annotations
@@ -451,6 +529,11 @@ def visualize_annotations(video_path): # auxiliary function, visualizes the fina
 
 def finalize(video_path): # auxiliary function, finalizes the annotation process
     
+    global LOGGER
+
+    if(LOGGER is None):
+        LOGGER = Logger()
+
     LOGGER.log(message = "Finalizing the annotation process")
 
     os.makedirs("output/" + video_path.split("/")[-1].split(".")[0], exist_ok = True)

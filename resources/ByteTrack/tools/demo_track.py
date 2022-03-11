@@ -260,7 +260,7 @@ def imageflow_demo(predictor, vis_folder, current_time, args, exp):
         save_path = osp.join(save_folder, "camera.mp4")
     #logger.info(f"video save_path is {save_path}")
     vid_writer = cv2.VideoWriter(
-        save_path, cv2.VideoWriter_fourcc(*"mp4v"), fps, (int(width), int(height))
+        "output/byte_track_predictions.mp4", cv2.VideoWriter_fourcc(*"mp4v"), fps, (int(width), int(height))
     )
     tracker = BYTETracker(args, frame_rate=30)
     timer = Timer()
