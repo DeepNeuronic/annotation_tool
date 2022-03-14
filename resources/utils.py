@@ -541,6 +541,7 @@ def finalize(video_path): # auxiliary function, finalizes the annotation process
     if(os.path.exists("output/cvat_task")): rmtree("output/cvat_task")
     if(os.path.exists("output/tracked_objects")): rmtree("output/tracked_objects")
     if(os.path.exists("output/tracked_objects_fixed")): rmtree("output/tracked_objects_fixed")
+    if(os.path.exists("output/byte_track_predictions.mp4")): os.remove("output/byte_track_predictions.mp4")
 
     os.rename("output/cvat_task.zip", "output/" + video_path.split("/")[-1].split(".")[0] + "/cvat_task.zip")
     if(os.path.exists("output/" + video_path.split("/")[-1])): os.rename("output/" + video_path.split("/")[-1], "output/" + video_path.split("/")[-1].split(".")[0] + "/" + video_path.split("/")[-1])
